@@ -1,0 +1,21 @@
+Third challenge: Open questions.
+
+1. A general purpose operating system (GPOS) like windows,Linux and macOs is designed for user interaction
+and run multiple applications at the same time (so it will prioritize some tasks) and that may lead to latency
+also, the schedular of a GPOS is non-deterministic --> we can't determine which task will execute when and for
+how long, on the other hand, timing deadlines are critical in RTOS--> the schedular can guarantee meeting
+timing deadlines, also parallel processing, memory management and fast dispatch latency are key feature of a RTOS.
+
+2. the STM32 microcontroller is preferable over other MCUs when power consumption is critical in 
+your appliccation, or when a high speed communication is implemnted like CAN, LIN, CANFD and FlexRay
+such as in autmotive applications.
+
+3. When multiple slaves have the same I2C address we can use a multiplexer or I2C Address Translator.
+
+4. We can use a single data line communication (one-wire protocol).
+
+5. I would choose I2C communication protocol because it is Multi Master/Multi slave protocol,
+   so the 30 modules can act as masters or slaves and communicate with each other effectively.
+
+6. Simply, we connect the address pins of each device to GPIO pins, so we can dinamically change
+   the devices addresses.
